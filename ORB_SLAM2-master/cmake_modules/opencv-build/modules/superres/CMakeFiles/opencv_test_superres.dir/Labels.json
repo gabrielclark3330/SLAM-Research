@@ -1,0 +1,42 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/Users/gabrielclark/Documents/projects/SLAM-Research/ORB_SLAM2-master/cmake_modules/opencv-3.3.1/modules/superres/test/test_main.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_superres",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "/Users/gabrielclark/Documents/projects/SLAM-Research/ORB_SLAM2-master/cmake_modules/opencv-3.3.1/modules/superres/test/test_superres.cpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_superres",
+				"AccuracyTest"
+			]
+		},
+		{
+			"file" : "/Users/gabrielclark/Documents/projects/SLAM-Research/ORB_SLAM2-master/cmake_modules/opencv-3.3.1/modules/superres/test/test_precomp.hpp",
+			"labels" : 
+			[
+				"Main",
+				"opencv_superres",
+				"AccuracyTest"
+			]
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"Main",
+			"opencv_superres",
+			"AccuracyTest"
+		],
+		"name" : "opencv_test_superres"
+	}
+}
