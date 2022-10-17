@@ -3,7 +3,7 @@ echo "Configuring and building Thirdparty/DBoW2 ..."
 cd Thirdparty/DBoW2
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCC="/opt/homebrew/opt/llvm/bin/clang" -DCXX="/opt/homebrew/opt/llvm/bin/clang++" -DLDFLAGS="-L/opt/homebrew/opt/llvm/lib" -DCPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 make -j -I /opt/homebrew/Cellar/boost/1.80.0/include -L /opt/homebrew/Cellar/boost/1.80.0/lib
 
 cd ../../g2o
@@ -12,7 +12,7 @@ echo "Configuring and building Thirdparty/g2o ..."
 
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCC="/opt/homebrew/opt/llvm/bin/clang" -DCXX="/opt/homebrew/opt/llvm/bin/clang++" -DLDFLAGS="-L/opt/homebrew/opt/llvm/lib" -DCPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 make -j -I /opt/homebrew/Cellar/boost/1.80.0/include -L /opt/homebrew/Cellar/boost/1.80.0/lib
 
 cd ../../Sophus
@@ -21,7 +21,7 @@ echo "Configuring and building Thirdparty/Sophus ..."
 
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCC="/opt/homebrew/opt/llvm/bin/clang" -DCXX="/opt/homebrew/opt/llvm/bin/clang++" -DLDFLAGS="-L/opt/homebrew/opt/llvm/lib" -DCPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 make -j -I /opt/homebrew/Cellar/boost/1.80.0/include -L /opt/homebrew/Cellar/boost/1.80.0/lib
 
 cd ../../../
@@ -36,5 +36,5 @@ echo "Configuring and building ORB_SLAM3 ..."
 
 mkdir build
 cd build
-cmake .. -DCMAKE_BUILD_TYPE=Release
+cmake .. -DCMAKE_BUILD_TYPE=Release -DCC="/opt/homebrew/opt/llvm/bin/clang" -DCXX="/opt/homebrew/opt/llvm/bin/clang++" -DLDFLAGS="-L/opt/homebrew/opt/llvm/lib" -DCPPFLAGS="-I/opt/homebrew/opt/llvm/include"
 make -j4 -I /opt/homebrew/Cellar/boost/1.80.0/include -L /opt/homebrew/Cellar/boost/1.80.0/lib

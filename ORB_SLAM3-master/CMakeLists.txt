@@ -1,6 +1,14 @@
 cmake_minimum_required(VERSION 2.8)
 project(ORB_SLAM3)
 
+#[[
+message(STATUS "set env var")
+set(ENV{CC} "/opt/homebrew/opt/llvm/bin/clang")
+set(ENV{CXX} "/opt/homebrew/opt/llvm/bin/clang++")
+set(ENV{LDFLAGS} "-L/opt/homebrew/opt/llvm/lib")
+set(ENV{CPPFLAGS} "-I/opt/homebrew/opt/llvm/include")
+]]
+
 IF(NOT CMAKE_BUILD_TYPE)
   SET(CMAKE_BUILD_TYPE Release)
 ENDIF()
